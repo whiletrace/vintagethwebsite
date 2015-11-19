@@ -15,8 +15,8 @@ body {
 }
 
 .container {
- 	width:1016px;
- 	max-width: none !important;
+ 	
+ 	max-width: 1016px;
  	padding: 0;
  }
  
@@ -58,17 +58,21 @@ a {
 
 }
 
-a:hover {
-	text-decoration: none;
-	color:inherit;
+.nav > li > a:hover { 
+    background-color: transparent; 
+    text-decoration: none;
+	color: black;
 	border: none;
+}
 
+a:focus {
+	color: inherit;
 }
 
 
-
 .current {
-	background-color: #ececec;
+	font-family: "adobe-garamond-pro";
+	font-weight: 700;
 	
 }
  
@@ -84,49 +88,65 @@ a:hover {
 
 }
 
-.nav li{
+ul li {
+	max-width: 1016px;
 	float:left;
 	width: 20%;
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	border-left: 1px solid rgb(0, 0, 0);
-	font-family: "Museo Sans Rounded";
-	font-weight: 300;
+	font-family: "adobe-garamond-pro";
+	font-weight: 400;
 
 
 }
+ul li:hover {
+	font-family: "adobe-garamond-pro";
+	font-weight: 700;
+	background-color: none;
 
-.nav a{
-	display: block;
-	padding: 1em 0:;
 
+}
+body{
+	min-width: 100%;
 }
 
 
-.nav li:last-of-type {
-	border-right: 1px solid rgb(0, 0, 0);
+	.header {
+		max-width: 100%;
+	    height: 30%;
+		background-image: url('../images/small_device_banner.png');
+		background-size: cover;
+		padding: 0;
+	}
 
-}
+    .header h1{
+ 	font-family:"garamond-premier-pro-display";
+ 	color: #FFFFFF;
+ 	font-size: 30px;
+ 	font-variant: small-caps;
+ 	padding-left: 10px;
+ 	padding-top: 5px;
 
 
 
 
 .header {
-	width: 1016px;
-	max-width: none !important;
+	max-width: 1016px;
 	height: 200px;
 	background-image: url('../images/banner2.png');
 	background-size: cover;
 	padding: 0;
 	margin-top: 30px; 
-	border-radius: 20px;
+	margin-right: auto;
+	margin-left: auto;
 	
 
 }
 
   .header h1{
- 	font-family:"Garamond Premier Pro";
+ 	font-family:"garamond-premier-pro-display";
+ 	font-weight: 600;
  	color: #FFFFFF;
  	font-size: 60px;
  	font-variant: small-caps;
@@ -230,16 +250,7 @@ footer{
 		opacity: 1.0;
 	}
 
-	a:hover {
-	text-decoration: none;
-	color:inherit;
-	border: none;
-
-}
-
-a:focus {
-	color: inherit;
-}
+	
 
 .col-xs-8 {
 	padding-top: 15px;
@@ -287,3 +298,69 @@ a:focus {
 	font-size: 10px;
 	font-weight: 300;
 }
+
+/* media queries */ 
+
+@media only screen and (vw:30%) {
+	
+body{
+	min-width: 100%;
+}
+
+
+	.header {
+		.header {
+	max-width: 1016px;
+	height: 200px;
+	background-image: url('../images/banner2.png');
+	background-size: cover;
+	padding: 0;
+	margin-top: 30px; 
+	margin-right: auto;
+	margin-left: auto;
+}
+
+    .header h1{
+ 	font-family:"garamond-premier-pro-display";
+ 	color: #FFFFFF;
+ 	font-size: 30px;
+ 	font-variant: small-caps;
+ 	padding-left: 10px;
+ 	padding-top: 5px;
+
+
+ }
+	
+
+}
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
