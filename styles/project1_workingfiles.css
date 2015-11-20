@@ -8,102 +8,105 @@
 	box-sizing: border-box;
 }
 
-body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	margin-left: 75px;
-	margin-right: 75px;
+/* setting relative units for type styles*/
+
+html {
+
+	font-size: 16px; 
+
 }
 
-.container {
- 	
- 	max-width: 1016px;
- 	padding: 0;
- }
- .header {
+body {
+	width: 100%;
 	max-width: 1016px;
-	height: 200px;
-	background-image: url('../images/banner2.png');
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin :auto;
+}
+
+
+h1 {
+
+	font-size: 3rem;
+
+}
+
+h2{
+
+	font-size: 2rem;
+}
+
+p {
+	font-size: 1rem;
+}
+
+/* This where heading and nav start */
+
+.container {
+ 	width: 100%;
+ 	max-width: 1016px;
+ 
+ }
+
+ .header { 
+	max-width: 1016px;
+	max-height: 20%;
+	background-image: url("../images/banner2.png");
 	background-size: cover;
+	background-repeat: no-repeat;
 	padding: 0;
-	margin-top: 30px; 
 	margin-right: auto;
 	margin-left: auto;
-}
 	
+ 
+}
 
   .header h1{
  	font-family:"garamond-premier-pro-display";
+ 	font-size: 2rem;
  	font-weight: 600;
  	color: #FFFFFF;
- 	font-size: 60px;
  	font-variant: small-caps;
- 	padding-left: 10px;
- 	padding-top: 50px;
+ 	padding-left: 1rem;
+ 	padding-top: 1rem;
+ 	padding-bottom: -1rem;
 
  }
 
- .guitar p{
- 	font-family: "Adobe Garamond Pro";
- 	font-size:14px;
-
- }
- .guitar img{
- 	border-radius: 20px;
- }
-
- .heading{
- 	font-family: "Adobe Garamond Pro";
- 	font-size: 50px;
- }
-
- a {
-	color: inherit;
-	text-decoration: none;
+ .nav ul {
+	list-style: none;
+	margin: 0;
+	color:black;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 2em;
 
 }
 
-.nav > li > a:hover { 
+ .nav > li > a:hover { 
     background-color: transparent; 
     text-decoration: none;
 	color: black;
 	border: none;
 }
-
-a:focus {
-	color: inherit;
-}
-
-
-.current {
-	font-family: "adobe-garamond-pro";
-	font-weight: 700;
+.nav > li {
+	border-bottom:1px solid black;
 	
-}
- 
-
-.nav ul {
-	list-style: none;
-	margin: 0;
-	color:black;
-	padding-right: 10px;
-	padding-left: 10px;
-	margin-top: 15px;
-	margin-bottom: 45px;
-
-}
+	}
 
 ul li {
+	margin-top: .25rem;
+	min-width: 100%;
 	max-width: 1016px;
 	float:left;
-	width: 20%;
+	width: 12rem;
 	text-align: center;
-	margin: 0;
-	padding: 0;
 	font-family: "adobe-garamond-pro";
 	font-weight: 400;
-
+	
 
 }
+
 ul li:hover {
 	font-family: "adobe-garamond-pro";
 	font-weight: 700;
@@ -112,16 +115,72 @@ ul li:hover {
 
 }
 
+ a {
+	color: inherit;
+	text-decoration: none;
 
+}
+
+
+
+a:focus {
+
+	color: inherit;
+}
+
+
+.current {
+
+	font-family: "adobe-garamond-pro";
+	font-weight: 700;
+	
+}
+/* article */
+ 
+.about {
+ 	
+ 	width: 100%;
+ 	height: 475px;
+ 	background-image: url('../images/frontimage.jpg');
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	border-radius: 20px;
+ }
+
+ .about p{
+ 	height: 100%;
+ 	max-width:500px;
+ 	background-color:rgba(255,255,255,0.5);
+ 	font-family: "adobe-garamond-pro";
+ 	padding-top: 2rem;
+ 	padding-left: 1rem;
+ 	padding-right: 1rem;
+
+ }
+
+
+ .guitar p{
+	font-family: "adobe-garamond-pro";
+ 	font-size: 1rem;
+
+ }
+ .guitar img{
+ 	border-radius: 20px;
+ }
+
+ .heading{
+ 	font-family: "adobe-garamond-pro";
+ 	font-size: 3rem;
+ }
  
 .guitar{
-	font-family: "Adobe Garamond";
-	font-size:14px;
+	font-family: "adobe-garamond-pro";
+	font-size: 1rem;
 }
 
  .attributes{ 
  	width: 800px;
- 	clear:both;
+ 	clear: both;
  	margin-left: 0;
  	padding-top: 75px;
 
@@ -129,12 +188,12 @@ ul li:hover {
 
 .attribtutes p {
 	font-family: "Museo Sans Rounded 500";
-	font-size: 12px;
+	font-size: .75rem;
 }
 
 .attribtutes strong {
 	font-family: "Museo Sans Rounded 700";
-	font-size: 12px;
+	font-size: .75rem;
 }
 
  
@@ -150,44 +209,55 @@ ul li:hover {
 
  .material p{
 	font-family: "Museo Sans Rounded";
-	font-size: 14px;
+	font-size: 1rem;
 	font-weight: 300;
 	b
 }
 
 .material strong{
 	font-family: "Museo Sans Rounded";
-	font-size: 14px;
+	font-size: 1rem;
 	font-weight: 500;
 }
 
 .year p{
 	font-family: "Museo Sans Rounded";
-	font-size: 14px;
+	font-size: 1rem;
 	font-weight: 300;
 }
 
 .year strong{
 	font-family: "Museo Sans Rounded";
-	font-size: 14px;
+	font-size: 1rem;
 	font-weight: 500;
 }
 
- .about {
- 	width: 1016px;
- 	min-width: none !important;
+ .box {
+ 	min-width: 320px;
  	height: 475px;
  	background-image: url('../images/frontimage.jpg');
  	background-repeat: no-repeat;
  	background-size: cover;
  	border-radius: 20px;
+ 	position: relative;
  }
 
- .about p{
+ .box p{
+ 	min-width: 320px;
  	background-color:rgba(255,255,255,0.5);
- 	font-family: "Adobe Garamond Pro";
- 	font-size: 15px;
- 	padding-top: 10px;
+ 	font-family: "adobe-garamond-pro";
+ 	padding-top: 2rem;
+ 	padding-left: 1rem;
+ 	padding-right: 1rem;
+ 	border-radius: 20px;
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+
+ }
+
+ 
+
  }
 
 
@@ -198,9 +268,8 @@ ul li:hover {
 
 
 .collections img {
+	max-width: 75%;
 	display: block;
-	width: 200px;
-	max-width:none !important;
 	opacity: 0.5;
 	
 }
@@ -216,7 +285,7 @@ footer{
 
 .footer img{
 	display: inline-block;
-	width: 30px;
+	width: 2rem;
 	max-width:none !important;
 	opacity: .50;
 	padding-left: 3px;
@@ -231,18 +300,16 @@ footer{
 
 	
 
-.col-xs-8 {
-	padding-top: 15px;
-}
+
 
 .contact p{
-	font-family: "Museo Sans Rounded";
+	font-family: "museo-sans-rounded";
 	font-size: 11px;
 	font-weight: 300;
 }
 
 .contact strong{
-	font-family: "Museo Sans Rounded";
+	font-family: "museo-sans-rounded";
 	font-size: 11px;
 	font-weight: 500;
 }
@@ -266,15 +333,15 @@ footer{
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	font-family: "Museo Sans Rounded";
-	font-size: 12px;
+	font-family: "museo-sans-rounded";
+	font-size: 1rem;
 	font-weight: 300;
 }
 
-.copyright {
+.copyright p {
 	text-align: center;
-	font-family: "Museo Rounded Sans";
-	font-size: 10px;
+	font-family: "museo-sans-rounded";
+	font-size: .75rem;
 	font-weight: 300;
 }
 
