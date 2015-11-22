@@ -10,18 +10,14 @@
 
 /* setting relative units for type styles*/
 
-html {
- font-size: 16px;
-	
 
-}
 
 body {
 	width: 100%;
 	max-width: 1016px;
 	font-family: Helvetica, Arial, sans-serif;
 	margin :auto;
-	
+	font-size: 16px;
 }
 
 
@@ -92,10 +88,6 @@ p {
 }
 .nav > li {
 	border-bottom:1px solid black;
-	
-	}
-
-ul li {
 	margin-top: .25rem;
 	min-width: 100%;
 	max-width: 1016px;
@@ -104,9 +96,9 @@ ul li {
 	text-align: center;
 	font-family: "adobe-garamond-pro";
 	font-weight: 400;
-	
+	}
 
-}
+
 
 ul li:hover {
 	font-family: "adobe-garamond-pro";
@@ -296,44 +288,41 @@ footer{
 	
 .contact p{
 	font-family: "museo-sans-rounded";
-	font-size: .5rem;
+	font-size: 1rem;
 	font-weight: 300;
 	padding-left: 2rem;
 }
 
 .contact strong{
 	font-family: "museo-sans-rounded";
-	font-size: .5rem;
+	font-size: 1rem;
 	font-weight: 500;
 }
 
-
-
 .sitemap ul{
+	text-align: center;
 	list-style: none;
+	padding: 0;
 	margin: 0;
-	color:black;
-	padding-right: 10px;
-	padding-left: 10px;
-	margin-top: 15px;
-	margin-bottom: 45px;
-	width: 20
-
 }
 
-sitemap > li{
+.sitemap ul li {
 	display: inline;
-	width: 20%;
-	float: left;
+	min-width: 20%;
+	font-size:1rem;
+
 }
 
 
 
 .copyright p {
+	position: absolute;
 	text-align: center;
 	font-family: "museo-sans-rounded";
 	font-size: .75rem;
 	font-weight: 300;
+	margin: 
+	margin-left: auto;
 }
 
 /* media queries */ 
