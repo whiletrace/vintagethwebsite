@@ -8,175 +8,132 @@
 	box-sizing: border-box;
 }
 
+
 body {
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-	margin-left: 75px;
-	margin-right: 75px;
+	width: 100%;
+	max-width: 1016px;
+	font-family: Helvetica, Arial, sans-serif;
+	margin :auto;
+	font-size: 100%;
 }
+
+
+h1 {
+
+	font-size: 3rem;
+
+}
+
+h2{
+
+	font-size: 2rem;
+}
+
+p {
+	font-size: 1rem;
+}
+
+footer{
+	clear: all;
+}
+
+/* This where heading and nav start */
 
 .container {
- 	width:1016px;
- 	max-width: none !important;
- 	padding: 0;
- }
+ 	width: 100%;
+ 	max-width: 1016px;
  
-.guitar{
-	font-family: "Adobe Garamond";
-	font-size:14px;
-}
+ }
 
- .attributes{ 
- 	width: 800px;
- 	clear:both;
- 	margin-left: 0;
- 	padding-top: 75px;
-
-}	
-
-.attribtutes p {
-	font-family: "Museo Sans Rounded 500";
-	font-size: 12px;
-}
-
-.attribtutes strong {
-	font-family: "Museo Sans Rounded 700";
-	font-size: 12px;
-}
-
+ .header { 
+	max-width: 1016px;
+	max-height: 20%;
+	background-image: url("../images/banner2.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin-right: auto;
+	margin-left: auto;
+	
  
- .material{
- 	float:left;
+}
+
+  .header h1{
+ 	font-family:"garamond-premier-pro-display";
+ 	font-weight: 600;
+ 	color: #FFFFFF;
+ 	font-variant: small-caps;
+ 	padding-left: 1rem;
+ 	padding-top: 1rem;
+ 	padding-bottom: -1rem;
+
  }
 
- .year{
- 	float:right;
- }
+ .nav ul {
+	list-style: none;
+	margin: 0;
+	color:black;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	margin-top: 1rem;
+	margin-bottom: 2em;
 
-a {
+}
+
+ .nav > li > a:hover { 
+    background-color: transparent; 
+    text-decoration: none;
+	color: black;
+	border: none;
+}
+.nav > li {
+	border-bottom:3px solid #AFB0AF;
+	margin-top: .25rem;
+	min-width: 100%;
+	max-width: 1016px;
+	float:left;
+	width: 12rem;
+	text-align: center;
+	font-family: "adobe-garamond-pro";
+	font-weight: 400;
+	}
+
+
+
+ul li:hover {
+	font-family: "adobe-garamond-pro";
+	font-weight: 700;
+	background-color: none;
+
+
+}
+
+ a {
 	color: inherit;
 	text-decoration: none;
 
 }
 
-a:hover {
-	text-decoration: none;
-	color:inherit;
-	border: none;
 
+
+a:focus {
+
+	color: inherit;
 }
-
 
 
 .current {
-	background-color: #ececec;
+
+	font-family: "adobe-garamond-pro";
+	font-weight: 700;
 	
 }
+
+/* article */
  
-
-.nav ul {
-	list-style: none;
-	margin: 0;
-	color:black;
-	padding-right: 10px;
-	padding-left: 10px;
-	margin-top: 15px;
-	margin-bottom: 45px;
-
-}
-
-.nav li{
-	float:left;
-	width: 20%;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	border-left: 1px solid rgb(0, 0, 0);
-	font-family: "Museo Sans Rounded";
-	font-weight: 300;
-
-
-}
-
-.nav a{
-	display: block;
-	padding: 1em 0:;
-
-}
-
-
-.nav li:last-of-type {
-	border-right: 1px solid rgb(0, 0, 0);
-
-}
-
-
-
-
-.header {
-	width: 1016px;
-	max-width: none !important;
-	height: 200px;
-	background-image: url('../images/banner2.png');
-	background-size: cover;
-	padding: 0;
-	margin-top: 30px; 
-	border-radius: 20px;
-	
-
-}
-
-  .header h1{
- 	font-family:"Garamond Premier Pro";
- 	color: #FFFFFF;
- 	font-size: 60px;
- 	font-variant: small-caps;
- 	padding-left: 10px;
- 	padding-top: 50px;
-
- }
-
- .guitar p{
- 	font-family: "Adobe Garamond Pro";
- 	font-size:14px;
-
- }
- .guitar img{
- 	border-radius: 20px;
- }
-
- .heading{
- 	font-family: "Adobe Garamond Pro";
- 	font-size: 50px;
- }
-
- .material p{
-	font-family: "Museo Sans Rounded";
-	font-size: 14px;
-	font-weight: 300;
-	b
-}
-
-.material strong{
-	font-family: "Museo Sans Rounded";
-	font-size: 14px;
-	font-weight: 500;
-}
-
-.year p{
-	font-family: "Museo Sans Rounded";
-	font-size: 14px;
-	font-weight: 300;
-}
-
-.year strong{
-	font-family: "Museo Sans Rounded";
-	font-size: 14px;
-	font-weight: 500;
-}
-
- .about {
- 	width: 1016px;
- 	min-width: none !important;
+.about {
+ 	
+ 	width: 100%;
  	height: 475px;
  	background-image: url('../images/frontimage.jpg');
  	background-repeat: no-repeat;
@@ -185,23 +142,83 @@ a:hover {
  }
 
  .about p{
- 	background-color:rgba(255,255,255,0.5);
- 	font-family: "Adobe Garamond Pro";
- 	font-size: 15px;
- 	padding-top: 10px;
+ 	font-size: 1.5;
+ 	height: 100%;
+ 	max-width:500px;
+ 	background-color:rgba(255,255,255,0.75);
+ 	font-family: "adobe-garamond-pro";
+ 	padding-top: 2rem;
+ 	padding-left: 1rem;
+ 	padding-right: 1rem;
+
+ }
+
+
+ .guitar p{
+	font-family: "adobe-garamond-pro";
+ 	font-size: 1rem;
+
+ }
+ .guitar img{
+ 	border-radius: 20px;
+ }
+
+ .heading{
+ 	font-family: "adobe-garamond-pro";
+ 	font-size: 3rem;
+ }
+
+ .heading > p {
+ 	font-family: "adobe-garamond-pro";
+ 	font-size: 1.5rem;
+ }
+ 
+.guitar{
+	font-family: "adobe-garamond-pro";
+	font-size: 1rem;
+}
+
+ .table-responsive{
+ 	margin-top: 5rem;
+ 	margin-bottom: 5rem;
  }
 
 
 
+ .box {
+ 	min-width: 320px;
+ 	height: 475px;
+ 	background-image: url('../images/frontimage.jpg');
+ 	background-repeat: no-repeat;
+ 	background-size: cover;
+ 	border-radius: 20px;
+ 	position: relative;
+ }
+
+ .box p{
+ 	min-width: 320px;
+ 	background-color:rgba(255,255,255,0.5);
+ 	font-family: "adobe-garamond-pro";
+ 	padding-top: 2rem;
+ 	padding-left: 1rem;
+ 	padding-right: 1rem;
+ 	border-radius: 20px;
+ 	position: absolute;
+ 	left: 0;
+ 	top: 0;
+ }
+
+/* this is the home icons*/
+ 
  .collections {
-	margin-top: 150px;
+	margin-top:3rem;
  }
 
 
 .collections img {
+	
+	max-width: 70%;
 	display: block;
-	width: 200px;
-	max-width:none !important;
 	opacity: 0.5;
 	
 }
@@ -210,15 +227,19 @@ a:hover {
 	opacity: 1.0;
 }
 
+/*footer*/
+
 
 footer{
-	margin-top: 150px;
+	margin-top: 3rem;
+	margin-right: 5%;
+	margin-left:5%;
 }
 
-.footer img{
+.social img{
+	float: right;
 	display: inline-block;
-	width: 30px;
-	max-width:none !important;
+	width: 3rem;
 	opacity: .50;
 	padding-left: 3px;
 	padding-right: 3px;
@@ -226,64 +247,157 @@ footer{
 	
 	}
 
-	.footer img:hover{
+	.social img:hover{
 		opacity: 1.0;
 	}
 
-	a:hover {
-	text-decoration: none;
-	color:inherit;
-	border: none;
-
-}
-
-a:focus {
-	color: inherit;
-}
-
-.col-xs-8 {
-	padding-top: 15px;
-}
-
+	
 .contact p{
-	font-family: "Museo Sans Rounded";
-	font-size: 11px;
+	font-family: "museo-sans-rounded";
+	font-size: 1rem;
 	font-weight: 300;
+	padding-left: 2rem;
 }
 
 .contact strong{
-	font-family: "Museo Sans Rounded";
-	font-size: 11px;
-	font-weight: 500;
+	font-family: "museo-sans-rounded";
+	font-size: 1rem;
+	font-weight:700;
 }
 
 
 
-.sitemap ul{
-	list-style: none;
-	margin: 0;
-	color:black;
-	padding-right: 10px;
-	padding-left: 10px;
-	margin-top: 15px;
-	margin-bottom: 45px;
+.copyright{
+	display: inline-block;
+}
+ 
+ .copyright p{
+ 	text-align: center;
+ 	margin-right: 1rem;
+ 	margin-left: 1rem;
+
+ 	
+ }
+
+.sitemap ul {
+	min-width: 100%;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  clear: both;
+}
+
+.sitemap li {
+  width: 10%;
+  font-size: 1rem;
+  display: inline-block;
+  margin-right: -4px;
+  
+}
+
+.sitemap a {
+	text-decoration: none;
+}
+ 
+ 
+ /* media queries */ 
+
+@media screen and (min-width: 600px) {
+  .nav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+  footer {
+		margin-top: 5rem;
+		padding-right:1rem; 
+		padding-left:1rem;
+		
+	}
+ 
+  
+@media only screen and (min-width : 768px){
+	
+	.nav > li{
+		float: left;
+		border-bottom:none;
+		display: inline;
+		width:  20%;
+		}
+
+		.copyright p {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	
+}
+
+
+/* Small Devices, Tablets */
+
+@media only screen and (min-width : 480px){
+	
+	.nav > li    {
+		float: left;
+		border-bottom: none;
+		display: inline;
+		min-width:0;
+		width: 20%;
+		
+	}
+	
 
 }
 
-.sitemap li{
-	float:left;
-	width: 20%;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	font-family: "Museo Sans Rounded";
-	font-size: 12px;
-	font-weight: 300;
+@media only screen and (min-width : 992px){
+ .header { 
+	height: 150px;
+	
 }
 
-.copyright {
-	text-align: center;
-	font-family: "Museo Rounded Sans";
-	font-size: 10px;
-	font-weight: 300;
-}
+.header h1{
+ 	font-size: 5rem;
+
+ }
+
+
+	}
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
